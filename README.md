@@ -1,7 +1,7 @@
 # DOTW-final
 Final Project for Drawing on the Web - Spring 2020
 
-__**Outline**__
+<u>**Outline**</u>
 
 For my final project, I will be creating three interactive drawings of the sky three of its forms: 
 - during daylight
