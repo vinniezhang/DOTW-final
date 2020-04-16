@@ -3,7 +3,7 @@ Final Project for Drawing on the Web - Spring 2020
 
 <ins>**Outline**</ins>
 
-For my final project, I will be creating three interactive drawings of the sky three of its forms: 
+For my final project, I will be creating three interactive drawings of the sky in three of its forms: 
 - during daylight
 - during sunset
 - during night time
