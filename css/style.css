@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    /* cursor: url(o2.jpg), auto; */
 }
 
 #container{
@@ -54,6 +55,10 @@ video{
     animation-fill-mode: forwards;
 }
 
+#waterDiv:hover{
+    cursor: url(../media/sunset/bb.png), auto;
+}
+
 #sun{
     left: 35%;
     bottom: -20;
@@ -76,6 +81,7 @@ video{
     position: fixed;
     bottom: 0;
     left: 50%;
+    visibility: hidden;
 }
 
 #waterTexture{
@@ -113,4 +119,3 @@ video{
         transform: scale(.8);
     }
 }
-
