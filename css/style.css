@@ -40,6 +40,13 @@ video{
     z-index: -10;
 }
 
+#cloud{
+    width: 35%;
+    top: 60;
+    left: 60%;
+    position: relative;
+}
+
 #water{
     position: fixed;
     bottom: 0;
