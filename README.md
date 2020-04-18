@@ -10,7 +10,7 @@ For my final project, I will be creating interactive drawings of the sky in thre
 
 I want to create an immersive and calming interface in which the user can de-stress to, and because I’ve always personally found comfort in looking up at passing clouds and stars, my goal is to recreate my own digital impression of that experience. 
 
-For my daylight scene, the animations I hope to mimic the floating of clouds, a flock of birds, and possibly additional flying objects (plane, leaves, balloons, etc).
+For my daylight scene, the animations I hope to mimic are that of floating clouds, a flock of birds, and possibly additional flying objects (plane, leaves, balloons, etc).
 
 For my sunrise/sunset scene, I’d like to have an animation of the sun rising/setting and also include clouds and a body of water, where users can cause ripples on its surface.
 
