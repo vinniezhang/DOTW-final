@@ -43,8 +43,21 @@ video{
 #cloud{
     width: 35%;
     top: 60;
-    left: 60%;
+    left: 55%;
     position: relative;
+    animation-name: moveCloud;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#birds{
+    left: 55%;
+    top: 40;
+    position: fixed;
+    display: none;
 }
 
 #water{
@@ -79,6 +92,10 @@ video{
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
+}
+
+#sun:hover{
+    cursor: url(../media/sunset/sunCursor.png), auto;
 }
 
 #ripple{
@@ -125,4 +142,16 @@ video{
         bottom: -150px;
         transform: scale(.8);
     }
+}
+
+@keyframes moveCloud {
+
+    from {
+        left: 60%;
+    }
+
+    to {
+        left: 50%
+    }
+
 }
