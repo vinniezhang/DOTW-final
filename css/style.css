@@ -72,6 +72,7 @@ video{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-fill-mode: forwards;
+    z-index: 100;
 }
 
 #waterDiv:hover{
@@ -119,11 +120,12 @@ video{
 
 .light{
     text-align: left;
+    max-width: 15%;
 }
 
 #pulse {
-    max-width: 20%;
-    height: 20%;
+    max-width: 22%;
+    height: 22%;
     margin-bottom: 18%;
     bottom: 0;
     position: fixed;
@@ -131,13 +133,40 @@ video{
     display: none;
 }
 
+#rock, #rock2{
+    z-index: 10;
+    position: fixed;
+    min-width: 15%;
+    height: 20%;
+}
+
+#rock{
+    bottom: 0px;
+    margin-bottom: 6%;
+    left: -25px;
+}
+
+#rock2{
+    left: -100px;
+    bottom: 0px;
+    margin-bottom: 6%;
+    z-index: -1;
+    opacity: .9;
+}
+
+svg{
+    position: fixed;
+    padding: 0;
+}
+
 #lh{
     min-width: 7%;
-    height: 30%;
+    height: 35%;
     margin-bottom: 10%;
-    bottom: 0;
-    left: 40;
+    bottom: 0px;
+    left: 40px;
     position: fixed;
+    z-index: 5;
 }
 
 @keyframes moveWaves {
