@@ -16,5 +16,5 @@ For my sunrise/sunset scene, I’d like to have an animation of the sun rising/s
 
 For my night scene, a big goal of mine is to incorporate constellations and have users interact with the stars in some sense as to be able to hover over certain groups of stars, and have the connecting lines of a constellation display. That would be the main focus of this drawing, but I may still include cursory cloud and moon (phases) animations.
 
-For all scenes, I hope to layer instrumental audio as well, and the visual aesthetic will be that of mixed media, giving the overall feeling of a digital/interactive collage-esque feel.
+For all scenes, I hope to layer instrumental audio as well, and the visual aesthetic will be that of mixed media, giving the overall feeling of a digital/interactive collage.
 
