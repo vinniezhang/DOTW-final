@@ -1,218 +1,98 @@
 body{
+    background-color: #6d54b3;
+    text-align: center;
     margin: 0;
     padding: 0;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+    text-shadow: #382963 4px 3px;
+}
+
+h1{
+    margin-top: 50px;
+}
+
+#warp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10;
 }
 
 #container{
-    background-image: url(../media/sunset/orange.jpg);
-    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#clockDiv{
     position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
 }
 
-video{
-    mix-blend-mode: multiply;
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
-    height: auto;
-    z-index: -10;
-}
-
-#colors{
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
-    height: auto;
-    z-index: -10;
-}
-
-#cloud{
-    width: 35%;
-    top: 60;
-    left: 55%;
+#clock{
     position: relative;
-    animation-name: moveCloud;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
+    margin: auto;
+    width: 30%;
+    height: 30%;
+}
+
+#clock:hover{
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: 3;
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
 
-#birds{
-    left: 55%;
-    top: 40;
-    position: fixed;
-    display: none;
-    width: 35%;
-}
-/* 
-#water{
+#table{
     position: fixed;
     bottom: 0;
     left: 0;
     width: auto;
     min-width: 100%;
-    height: 25%;
-    opacity: .8;
-    z-index: 100;
-} */
-
-#sun{
-    left: 35%;
-    bottom: -20;
-    position: absolute;
-    opacity: .9;
-    min-width: 30%;
-    min-height: 45%;
-    animation-name: sunDown;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
-
-#waterTexture{
-    /* mix-blend-mode: overlay; */
-    position: fixed;
-    bottom: -25;
-    left: 0;
-    width: auto;
-    min-width: 100%;
-    height: 28%;
-    opacity: .9;
-
-    animation-name: moveWaves;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-}
-
-.light{
-    text-align: left;
-    max-width: 15%;
-}
-
-#pulse {
-    max-width: 22%;
     height: 22%;
-    margin-bottom: 18%;
-    bottom: 0;
-    position: fixed;
-    mix-blend-mode: lighten;
-    display: none;
+    z-index: -1;
 }
 
-#ramen{
-    mix-blend-mode: lighten;
-    display: none;
-    position: fixed;
-    max-width: 20%;
-    max-height: 20%;
-    bottom: 0;
-    margin-bottom: 19%;
-    margin-left: 11%;
-    z-index: 100;
+@keyframes shake{
 
-    animation-name: moveRamen;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-}
-
-#rock, #rock2{
-    z-index: 100;
-    position: fixed;
-    min-width: 15%;
-    height: 20%;
-}
-
-#rock{
-    bottom: 0px;
-    margin-bottom: 6%;
-    left: -25px;
-}
-
-#rock2{
-    left: -100px;
-    bottom: 0px;
-    margin-bottom: 6%;
-    z-index: 1;
-}
-
-svg{
-    position: fixed;
-    padding: 0;
-}
-
-#lh{
-    min-width: 7%;
-    height: 35%;
-    margin-bottom: 10%;
-    bottom: 0px;
-    left: 40px;
-    position: fixed;
-    z-index: 5;
-}
-
-@keyframes moveWaves {
-    from {
-        transform: scale(1);
-    } 
-
-    to {
-        transform: scale(1.1);
-    }
-}
-
-@keyframes sunDown {
-    from {
-        bottom: -20px;
-        transform: scale(1);
-    } 
-
-    to {
-        bottom: -150px;
-        transform: scale(.8);
-    }
-}
-
-@keyframes moveCloud {
-
-    from {
-        left: 60%;
+    0% {
+        transform: rotate(0deg);
+        bottom: 0px;
+        left: 0px;
     }
 
-    to {
-        left: 50%;
+    25% {
+        transform: rotate(-10deg);
+        bottom: 10px;
+        left: 5px;
     }
 
-}
-
-@keyframes moveRamen {
-
-    from {
-        transform: rotate(-6deg);
+    50%{
+        transform: rotate(5deg);
+        bottom: 20px;
+        left: 10px;
     }
 
-    to {
-        transform: rotate(3deg);
+    75% {
+        transform: rotate(12deg);
+        bottom: 10px;
+        left: 5px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        bottom: 0px;
+        left: 0px;
     }
 
 }

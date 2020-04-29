@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sunset</title>
+    <link rel="stylesheet" href="css/sunset.css">
+    <style>
+      body {margin: 0;}
+    </style>
+  </head>
+  
+  <body>
+    
+    <div id="container">
+
+        <audio autoplay loop>
+            <source src="media/sunset/waves.wav" type="audio/mp3">
+        </audio>
+
+        <audio id="chirp">
+            <source src="media/sunset/chirp.wav" type="audio/mp3">
+        </audio>
+
+        <div>
+            <img id="colors" src="media/sunset/colors.gif">
+        </div>
+
+        <div id="sunDiv">
+            <img id="sun" src="media/sunset/orangeSun.png">
+        </div>
+
+        <div>
+            <img id="cloud" src="media/sunset/textCloud.png">
+        </div>
+
+        <div>
+            <img id="birds" src="media/sunset/birds.gif">
+        </div>
+
+        <div class="light">
+            <img id="pulse" src="media/sunset/pulse.gif"/>
+            <img id="lh" src="media/sunset/textured-lh.png"/>
+            <img id="ramen" src="media/sunset/ramen.png" />
+            <svg id="rock"><use xlink:href="media/sunset/rock.svg#rock"/></svg>
+            <svg id="rock2"><use xlink:href="media/sunset/rock.svg#rock"/></svg>
+        </div>
+
+        <div>
+            <img id="waterTexture" width=100% src="media/sunset/waterTexture.gif">
+        </div>
+
+        <!-- <div id="waterDiv">
+            <img id="water" width=100% src="media/sunset/blue.png">
+        </div> -->
+
+    </div>
+
+
+    <script src="js/three.min.js"></script>
+    <script src="js/sunset.js"></script>
+  </body>
+</html>

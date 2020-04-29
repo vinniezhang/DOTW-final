@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-image: url(../media/sunset/orange.jpg);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+video{
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10;
+}
+
+#colors{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10;
+}
+
+#cloud{
+    width: 35%;
+    top: 60;
+    left: 55%;
+    position: relative;
+    animation-name: moveCloud;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#birds{
+    left: 55%;
+    top: 40;
+    position: fixed;
+    display: none;
+    width: 35%;
+}
+/* 
+#water{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    min-width: 100%;
+    height: 25%;
+    opacity: .8;
+    z-index: 100;
+} */
+
+#sun{
+    left: 35%;
+    bottom: -20;
+    position: absolute;
+    opacity: .9;
+    min-width: 30%;
+    min-height: 45%;
+    animation-name: sunDown;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+#waterTexture{
+    /* mix-blend-mode: overlay; */
+    position: fixed;
+    bottom: -25;
+    left: 0;
+    width: auto;
+    min-width: 100%;
+    height: 28%;
+    opacity: .9;
+
+    animation-name: moveWaves;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.light{
+    text-align: left;
+    max-width: 15%;
+}
+
+#pulse {
+    max-width: 22%;
+    height: 22%;
+    margin-bottom: 18%;
+    bottom: 0;
+    position: fixed;
+    mix-blend-mode: lighten;
+    display: none;
+}
+
+#ramen{
+    mix-blend-mode: lighten;
+    display: none;
+    position: fixed;
+    max-width: 20%;
+    max-height: 20%;
+    bottom: 0;
+    margin-bottom: 19%;
+    margin-left: 11%;
+    z-index: 100;
+
+    animation-name: moveRamen;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#rock, #rock2{
+    z-index: 100;
+    position: fixed;
+    min-width: 15%;
+    height: 20%;
+}
+
+#rock{
+    bottom: 0px;
+    margin-bottom: 6%;
+    left: -25px;
+}
+
+#rock2{
+    left: -100px;
+    bottom: 0px;
+    margin-bottom: 6%;
+    z-index: 1;
+}
+
+svg{
+    position: fixed;
+    padding: 0;
+}
+
+#lh{
+    min-width: 7%;
+    height: 35%;
+    margin-bottom: 10%;
+    bottom: 0px;
+    left: 40px;
+    position: fixed;
+    z-index: 5;
+}
+
+@keyframes moveWaves {
+    from {
+        transform: scale(1);
+    } 
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes sunDown {
+    from {
+        bottom: -20px;
+        transform: scale(1);
+    } 
+
+    to {
+        bottom: -150px;
+        transform: scale(.8);
+    }
+}
+
+@keyframes moveCloud {
+
+    from {
+        left: 60%;
+    }
+
+    to {
+        left: 50%;
+    }
+
+}
+
+@keyframes moveRamen {
+
+    from {
+        transform: rotate(-6deg);
+    }
+
+    to {
+        transform: rotate(3deg);
+    }
+
+}
