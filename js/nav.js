@@ -5,33 +5,33 @@ let clock = document.querySelector("#clock");
 let screenWidth = window.innerWidth;
 let screenHeight = window.innerHeight;
 
-clock.addEventListener("mouseover", function(){
+clock.addEventListener("mousemove", function(){
     xPos = event.clientX;
     yPos = event.clientY;
-    console.log("screen height: ", screenHeight);
-    console.log("half height: ", screenHeight/2);
-    console.log("Y: ", yPos);
 
-    // need to access the CURRENT x and y pos, not the positions at which they enter the clock
-
-    if (xPos < screenWidth/2 - 50 && yPos <= screenHeight/2) {
+    if (xPos < screenWidth/2-screenWidth/20) {
         console.log("nightime");
+        body.style.cursor = 'url("./media/nav/moon.png"), default';
         clock.addEventListener("click", function(){
             window.location.href = "night.html"; // redirect to nighttime drawing
         })
-    } else if (xPos > screenWidth/2 + 20 && yPos <= screenHeight/2) {
+    } else if (xPos > screenWidth/2+screenWidth/20) {
         console.log("daytime");
+        body.style.cursor = 'url("./media/nav/sun.png"), default';
         clock.addEventListener("click", function(){
             window.location.href = "daytime.html"; // redirect to daytime drawing
         })
-    } else if (yPos > screenHeight/2 - 20){
+    } else {
         console.log("sunset time bb");
+        body.style.cursor = 'url("./media/nav/ss.png"), default';
         clock.addEventListener("click", function(){
             window.location.href = "sunset.html"; // redirect to sunset drawing
         })
     }
 })
 
-
+clock.addEventListener("mouseleave", function(){
+    body.style.cursor = 'default';
+})
 
 

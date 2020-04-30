@@ -14,7 +14,7 @@ h1{
 }
 
 #warp{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     min-height: 100%;
@@ -44,7 +44,7 @@ h1{
 }
 
 #clock:hover{
-    cursor: pointer;
+    /* cursor: pointer; */
     animation-name: shake;
     animation-duration: .5s;
     animation-iteration-count: 3;
