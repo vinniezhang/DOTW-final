@@ -44,8 +44,17 @@ body{
     bottom: 0;
     right: -170px;
     position: fixed;
-    max-width: 50%;
+    max-width: 45%;
     z-index: -5;
+}
+
+#tree:hover{
+    animation-name: shake;
+    animation-duration: .8s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
 #flower1{
@@ -58,11 +67,21 @@ body{
 
 #flower2{
     mix-blend-mode: multiply;
-    width: 25%;
+    width: 22%;
     position: fixed;
-    right: 300px;
+    left: 300px;
     bottom: 0px;
     z-index: -1;
+}
+
+#money{
+    visibility: hidden;
+    right: 0px;
+    bottom: 90px;
+    position: fixed;
+    max-width: 28%;
+    height: 55%;
+    z-index: -8;
 }
 
 #grass{
@@ -99,6 +118,35 @@ body{
     100% {
         left: 60%;
         top: 60px;
+    }
+
+}
+
+@keyframes shake{
+
+    0% {
+        transform: rotate(0deg);
+        bottom: 0px;
+    }
+
+    25% {
+        transform: rotate(-10deg);
+        bottom: 10px;
+    }
+
+    50%{
+        transform: rotate(5deg);
+        bottom: 20px;
+    }
+
+    75% {
+        transform: rotate(12deg);
+        bottom: 10px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        bottom: 0px;
     }
 
 }
