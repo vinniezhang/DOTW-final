@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../media/night/denim.jpg");
+}
+
+#container{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#bg{
+    mix-blend-mode: multiply;
+    position: fixed;
+    opacity: .65;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -8;
+}
+
+#star{
+    position: fixed;
+    width: 9%;
+    top: 100px;
+    left: 145px;
+    z-index: 1;
+    transform: rotate(5deg);
+
+    animation-name: fireball;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#fire{
+    position: fixed;
+    width: 7%;
+    height: 38%;
+    top: -30px;
+    left: 240px;
+    z-index: 0;
+    opacity: .9;
+    transform: rotate(50deg);
+    visibility: hidden;
+}
+
+#rat{
+    position: absolute;
+    top: 150px;
+    right: 260px;
+    width: 4%;
+    z-index: -1;
+}
+
+#moon{
+    position: absolute;
+    top: 95px;
+    right: 250px;
+    width: 12%;
+}
+
+#moon:hover{
+    transform-origin: 10% 85%;
+    animation-name: swingMoon;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+#bonfire {
+    position: fixed;
+    width: 18%;
+    bottom: 30px;
+    left: 40%;
+}
+
+#smoke{
+    position: fixed;
+    mix-blend-mode: multiply;
+    opacity: .8;
+    bottom: 50px;
+    left: 30%;
+    height: 80%;
+    z-index: -5;
+}
+
+#moth{
+    width: 22%;
+    position: fixed;
+    bottom: 70px;
+    left: 38%;
+    visibility: hidden;
+}
+
+#moss{
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: auto;
+    min-width: 100%;
+    height: 8%;
+    z-index: -5;
+}
+
+#grass{
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: auto;
+    min-width: 100%;
+    height: 20%;
+    z-index: -5;
+}
+
+@keyframes fireball {
+
+    from {
+        transform: rotate(0deg) scale(.9);
+    }
+
+    to {
+        transform: rotate(10deg) scale(.8);
+    }
+
+}
+
+@keyframes swingMoon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(80deg);
+    }
+}

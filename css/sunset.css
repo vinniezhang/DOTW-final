@@ -1,10 +1,11 @@
 body{
     margin: 0;
     padding: 0;
+    /* background-image: url(../media/sunset/lego.png); */
 }
 
 #container{
-    background-image: url(../media/sunset/orange.jpg);
+    background-image: url(../media/sunset/red.jpg);
     background-size: cover;
     position: fixed;
     top: 0;
@@ -28,6 +29,7 @@ video{
 }
 
 #colors{
+    mix-blend-mode: lighten;
     position: absolute;
     top: 0;
     left: 0;
