@@ -16,7 +16,7 @@ body{
 }
 
 #bg{
-    mix-blend-mode: multiply;
+    mix-blend-mode: luminosity;
     position: fixed;
     opacity: .65;
     top: 0;
@@ -32,7 +32,7 @@ body{
     position: fixed;
     width: 9%;
     top: 100px;
-    left: 145px;
+    left: 450px;
     z-index: 1;
     transform: rotate(5deg);
 
@@ -44,22 +44,42 @@ body{
     animation-timing-function: linear;
 }
 
+#star2{
+    position: fixed;
+    width: 3%;
+    top: 140px;
+    left: 230px;
+    z-index: 1;
+}
+
+#star3{
+    position: fixed;
+    width: 5%;
+    top: 70px;
+    left: 350px;
+    z-index: 1;
+}
+
+#star4{
+    position: fixed;
+    width: 4%;
+    top: 100px;
+    left: 600px;
+    z-index: 1;
+}
+
 #fire{
     position: fixed;
-    width: 7%;
-    height: 38%;
-    top: -30px;
-    left: 240px;
+    top: -50px;
+    left: 280px;
     z-index: 0;
-    opacity: .9;
-    transform: rotate(50deg);
     visibility: hidden;
 }
 
 #rat{
     position: absolute;
     top: 150px;
-    right: 260px;
+    right: 255px;
     width: 4%;
     z-index: -1;
 }
@@ -69,6 +89,7 @@ body{
     top: 95px;
     right: 250px;
     width: 12%;
+    transform: rotate(10deg);
 }
 
 #moon:hover{
@@ -88,22 +109,24 @@ body{
     left: 40%;
 }
 
-#smoke{
+#money{
+    width: 10%;
     position: fixed;
-    mix-blend-mode: multiply;
-    opacity: .8;
-    bottom: 50px;
-    left: 30%;
-    height: 80%;
-    z-index: -5;
+    bottom: 30px;
+    left: 200px;
 }
 
-#moth{
-    width: 22%;
+#money:hover{
+    cursor: pointer;
+}
+
+#fireSign{
+    width: 12%;
+    height: 35%;
     position: fixed;
-    bottom: 70px;
-    left: 38%;
-    visibility: hidden;
+    z-index: -1;
+    bottom: 50px;
+    left: 120px;
 }
 
 #moss{
@@ -140,7 +163,7 @@ body{
 
 @keyframes swingMoon {
     from {
-        transform: rotate(0deg);
+        transform: rotate(10deg);
     }
 
     to {

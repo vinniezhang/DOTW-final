@@ -4,6 +4,7 @@ let moon = document.getElementById("moon");
 let hinge = document.getElementById("hinge");
 let remy = document.getElementById("rat");
 let moth = document.getElementById("moth");
+let money = document.getElementById("money");
 let bonfire = document.getElementById("bonfire");
 
 star.addEventListener("mouseover", function(){
@@ -12,16 +13,6 @@ star.addEventListener("mouseover", function(){
 
 star.addEventListener("mouseleave", function(){
     fire.style.visibility = "hidden";
-})
-
-bonfire.addEventListener("mouseover", function(){
-    moth.style.visibility = "visible";
- })
- 
-bonfire.addEventListener("mouseleave", function(){
-    setTimeout(function(){ moth.style.visibility = "hidden"; }, 5000);
-
-    // moth.style.visibility = "hidden";
 })
 
 moon.addEventListener("mouseover", function(){
@@ -42,3 +33,19 @@ moon.addEventListener("mouseover", function(){
 
     )
 })
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("image", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("image");
+    money.style.visibility = "hidden";
+    bonfire.src = "media/night/moneyBurn.gif";
+    bonfire.style.bottom = "0px";
+}
