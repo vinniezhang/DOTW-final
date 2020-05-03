@@ -16,5 +16,5 @@ For my sunrise/sunset scene, I’d like to have an animation of the sun rising/s
 
 For my night scene, a goal of mine is to incorporate more user interactivity that can change the presentation of what's displayed - most likely through a bonfire, stars, and the moon.
 
-For all of these scenes, the overarching visual theme that will tie the drawings together will be that each is built around an aesthetic of mixed media, giving the general feeling of a digital/interactive collage. I wanted this project to be both weird and interesting, and explore how objects could be interpreted into a different functional medium.
+For all of these scenes, the overarching visual theme that will tie the drawings together will be that each is built around an aesthetic of mixed media, giving the general feeling of a digital/interactive collage. I wanted this project to be both weird and interesting, and explore how objects could be interpreted into unexpected functional mediums.
 
