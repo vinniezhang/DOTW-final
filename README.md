@@ -8,13 +8,13 @@ For my final project, I will be creating interactive drawings of the sky in thre
 - during sunrise/sunset
 - during night time
 
-I want to create an immersive and calming interface in which the user can de-stress to, and because I’ve always personally found comfort in looking up at passing clouds and stars, my goal is to recreate my own digital impression of that experience. 
+I want to create an immersive interface in which the user can interact and relax to, because I’ve always personally found comfort in looking up at the sky. My goal is to recreate my own digital impression of that experience. 
 
-For my daylight scene, the animations I hope to mimic are that of floating clouds, a flock of birds, and possibly additional flying objects (plane, leaves, balloons, etc).
+For my daylight scene, I hope to include scenes mimicking that of floating clouds, flowers, and other animations of natural objects.
 
-For my sunrise/sunset scene, I’d like to have an animation of the sun rising/setting and also include clouds and a body of water, where users can cause ripples on its surface.
+For my sunrise/sunset scene, I’d like to have an animation of the sun rising/setting, as well as include a body of water and potentially a lighthouse.
 
-For my night scene, a big goal of mine is to incorporate constellations and have users interact with the stars in some sense as to be able to hover over certain groups of stars, and have the connecting lines of a constellation display. That would be the main focus of this drawing, but I may still include cursory cloud and moon (phases) animations.
+For my night scene, a goal of mine is to incorporate more user interactivity that can change the presentation of what's displayed - most likely through a bonfire, stars, and the moon.
 
-For all scenes, I hope to layer instrumental audio as well, and the visual aesthetic will be that of mixed media, giving the overall feeling of a digital/interactive collage.
+For all of these scenes, the overarching visual theme that will tie the drawings together will be that each is built around an aesthetic of mixed media, giving the general feeling of a digital/interactive collage. I wanted this project to be both weird and interesting, and explore how objects could be interpreted into a different functional medium.
 
